@@ -1,0 +1,144 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #400036, #FF81D0);
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* Container geral do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1dc96;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para cada input de texto */
+  .form-outline {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-outline input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #1d3cf0;
+    font-size: 1rem;
+  }
+  
+  .form-outline label {
+    left: 100px;   
+    position: absolute;
+    top: -21px;
+    left: 2px;
+    font-size: 0.9rem;
+    color: #ce2121;
+    padding: 0 3px;
+  }
+  
+  /* Estilo para os inputs de email e senha */
+  .form-outline input[type="email"],
+  .form-outline input[type="senha"] {
+    padding-left: 10px;
+    
+  }
+  
+  /* Estilo para o checkbox */
+  .form-check {
+    margin-bottom: 1.1rem;
+  }
+  
+  .form-check-input {
+    margin-right: 10px;
+  }
+  
+  .form-check-label {
+    font-size: 1rem;
+    color: #7a0b0b;
+    position: relative;
+    top: -1px;
+    font-size: 1.0rem;
+  }
+  
+  /* Estilo para o botão de envio */
+  button[type="button"].btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #c759e9;
+    color: rgb(238, 226, 226);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    top: -13px; 
+  }
+  
+  button[type="button"].btn-primary:hover {
+    background-color: #ca49a3;
+  }
+  
+  /* Estilo para os botões de redes sociais */
+  .btn-secondary {
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d48bf1;
+  }
+  
+  /* Estilo para os ícones dentro dos botões */
+  .fab {
+    font-size: 1.3rem;
+  }
+  
+  /* Texto de link de redes sociais */
+  .text-center p {
+    margin: 14px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 576px) {
+    .row .col {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .form-outline input {
+      font-size: 1rem;
+    }
+  }
+    .titulo-formulario{
+      font-size: 1.2rem;
+      margin: 2rem;
+      background: linear-gradient(to left, #400036, #FF81D0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-top: -6px ;
+      font-size: 3vw;
+  }
+  
