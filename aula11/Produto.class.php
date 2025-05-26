@@ -6,9 +6,9 @@
 
         //construtor para inicializar o nome, preço e a quantidade
         public function __construct($nome, $preco, $quantidade = 0){
-            $this->Nome = $nome;
-            $this->Preco = $preco;
-            $this->Quantidade = $quantidade;
+            $this->Nome = $nome_produto;
+            $this->Preco = $preco_produto;
+            $this->Quantidade = $quant_produto;
         }
 
         //Getters
@@ -18,22 +18,38 @@
 
         public function getPreco(){
             return $this->Preco;
-        }
-        public function getQuantidade(){
-            return $this->Quantidade;
-        }
+        } 
 
         //Setters
-        public function setNome(){
+        public function setNome($nome){
             return $this->Nome;
         }
         public function setPreco($valor){
             return $this->Preco = $valor;
         }
-        public function setQuantidade(){
-            return $this->Quantidade
+    }
+
+    public function AdicionarEstoque($quantidade){
+        if($quantidade>0){
+            $this->Quantidade += $quantidade;
+
+        }else{
+            echo "A quantidade não pode ser negativa ou zerada.";
         }
     }
 
+    public function RemoverEstoque($quantidade){
+        if($quantidade>0 && $quantidade<=$this->Quantidade){
+            $this->Quantidade -= $quantidade;
+        }else{
+            echo "A quantidade não pode ser negativa ou zerada.";
+        }
+    }
+    public function MostrarDetalhes(){
+        echo "NOME:" . $this->getNome() . "<br>";
+        echo "PREÇO: R$" . number_format($this->getPreco(),2,',','.') . "<br>";
+        //echo "PREÇO: R$" . $this->Preco . "<br>";
+        echo "QUANTIDADE:" . $this->Quantidade . "<br>";
+    }
 
 ?>
